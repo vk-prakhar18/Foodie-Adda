@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main-Course</title>
+    <link rel="stylesheet" href="main-course.css">
+</head>
+<body>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+    <section class="main-course" id="main-course">
+  <h2>Main Course Specials 🍛</h2>
+  <p class="section-subtext">From North Indian classics to spicy gravies — enjoy our chef’s finest!</p>
+
+  <!-- Toggle Buttons -->
+  <div class="toggle-buttons">
+    <button class="filter-btn active" onclick="filterDishes('all')">All</button>
+    <button class="filter-btn" onclick="filterDishes('veg')">Veg</button>
+    <button class="filter-btn" onclick="filterDishes('nonveg')">Non-Veg</button>
+  </div>
+
+  <!-- Dish Cards -->
+  <div class="main-grid">
+    <!-- Dal Makhani -->
+    <div class="main-card veg" data-category="veg">
+      <img src="Dalmakhani.jpeg" alt="Dal Makhani">
+      <div class="main-info">
+        <h3>Dal Makhani <span class="badge veg">🌱 Veg</span></h3>
+        <p class="desc">Slow-cooked black lentils in creamy butter masala — a Punjabi soul dish.</p>
+        <div class="ratings">⭐⭐⭐⭐☆</div>
+        <div class="prep">Prep Time: 25 mins</div>
+        <div class="bottom-row">
+          <span class="price">₹180</span>
+          <button onclick="openModal('Dal Makhani')">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chicken Curry -->
+    <div class="main-card nonveg" data-category="nonveg">
+      <img src="Chickencurry.jpeg" alt="Chicken Curry">
+      <div class="main-info">
+        <h3>Chicken Curry <span class="badge hot">🔥 Spicy</span></h3>
+        <p class="desc">Rustic chicken in thick gravy — best with naan or jeera rice.</p>
+        <div class="ratings">⭐⭐⭐⭐⭐</div>
+        <div class="prep">Prep Time: 35 mins</div>
+        <div class="bottom-row">
+          <span class="price">₹220</span>
+          <button onclick="openModal('Chicken Curry')">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kadhai Paneer -->
+    <div class="main-card veg" data-category="veg">
+      <img src="kadhaipaneer.jpeg" alt="Kadhai Paneer">
+      <div class="main-info">
+        <h3>Kadhai Paneer <span class="badge chef">👨‍🍳 Chef's Pick</span></h3>
+        <p class="desc">Paneer cubes with capsicum in tomato masala cooked in a wok.</p>
+        <div class="ratings">⭐⭐⭐⭐☆</div>
+        <div class="prep">Prep Time: 20 mins</div>
+        <div class="bottom-row">
+          <span class="price">₹200</span>
+          <button onclick="openModal('Kadhai Paneer')">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Biryani -->
+    <div class="main-card nonveg" data-category="nonveg">
+      <img src="hyderbadibiryani.jpeg" alt="Hyderabadi Biryani">
+      <div class="main-info">
+        <h3>Hyderabadi Biryani <span class="badge top">🌟 Bestseller</span></h3>
+        <p class="desc">Fragrant rice layered with spiced chicken and caramelized onions.</p>
+        <div class="ratings">⭐⭐⭐⭐⭐</div>
+        <div class="prep">Prep Time: 45 mins</div>
+        <div class="bottom-row">
+          <span class="price">₹250</span>
+          <button onclick="openModal('Biryani')">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close-btn">&times;</span>
+    <h2 id="modal-title">Dish Name</h2>
+    <p id="modal-desc">Includes salad, raita & mini dessert. Add a drink for ₹40 extra.</p>
+    <button>Add Combo</button>
+  </div>
+</div>
+<script src="main-course.js"></script>
+</body>
+</html>

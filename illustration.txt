@@ -1,0 +1,13 @@
+Foodie ADDA 
+We offer cuisine for customer with care. 
+
+A Fast food restaurant website:-
+
+ELEMENTS    -->   DIVs  -->   BLOCKs  
+ 
+0. NavBAR - All instructions for the nav (home, about, contact, etc)
+1.  Hero Page - Intro, Background, Slogans
+2. Home -
+3. Info.
+4. About Us
+5. Contact Us

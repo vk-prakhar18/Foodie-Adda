@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodie Adda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🍴 Foodie Adda</div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href=".main-page">Menu</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- Add this button near your nav or wherever you want -->
+<li><button id="toggle-theme" class="theme-btn">🌙</button></li>
+
+      </ul>
+      <div class="menu-toggle" id="toggle-menu">☰</div>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <h1>Welcome to </h1>
+    <h2>FOODIE ADDA</h2>
+    <p>Your go-to place for delicious food</p>
+    <button onclick="scrollToContact()">Contact Us</button>
+  </section>
+  <section class="main-page" id="main">
+    <h2>Main Menu Highlights</h2>
+    <div class="spotlight-container">
+      <div class="left-column">
+        <div class="card">
+          <h3>Starters</h3>
+          <button><a href=starters.html style="text-decoration: none; color: white;">Click here for Starters</a></button>
+        </div>
+        <div class="card">
+          <h3>Combos</h3>
+          <button><a href="combos.html" style="text-decoration: none; color: white;" >Click here for Combos</a></button>
+        </div>
+        <div class="card">
+          <h3>Drinks</h3>
+          <button><a href="drinks.html" style="text-decoration: none; color: white;">Click here for Drinks</a></button>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="card large-card">
+          <h3>Main Course</h3>
+          <p>Explore our full-flavored dishes crafted to satisfy every craving!</p>
+          <button><a href="main-course.html" style="text-decoration: none; color: white;">VIEW MAIN COURSE</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="about" id="about">
+  <h2>About Foodie Adda</h2>
+  <div class="about-content">
+    <p>
+      At <strong>Foodie Adda</strong>, we believe food is more than just a meal — it's a memory. Founded with the idea of turning casual hangouts into flavorful experiences, we’re your go-to stop for street-style vibes, comfort dishes, and soul-satisfying combos.
+    </p>
+    <p>
+      Our chefs blend tradition with a creative twist, crafting dishes that remind you of home and surprise you with every bite. From spicy starters to soothing drinks, and hearty main courses — there’s something here for every mood and every food lover.
+    </p>
+    <p>
+      We’re not just a restaurant. We’re your adda — where conversations brew with chai, and laughter is served alongside every plate. Welcome to our table. 🍽️
+    </p>
+  </div>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2025 Foodie Adda. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
